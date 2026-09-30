@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    background: var(--wa-bg);
+    color: var(--wa-text);
+}
+
+#root {
+    height: 100vh;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 13px;
+    color: var(--wa-muted);
+}
+
+.field input {
+    padding: 10px 12px;
+    border: 1px solid var(--wa-border);
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--wa-text);
+    outline: none;
+}
+
+.field input:focus {
+    border-color: var(--wa-green);
+}
+
+.login-error {
+    color: #d32f2f;
+    font-size: 13px;
+    background: #fdecea;
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    background: var(--wa-green);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background: var(--wa-green-dark);
+}
+
+.btn-primary:disabled {
+    background: #9fd8c9;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    background: var(--wa-border);
+    color: var(--wa-text);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--wa-green-dark);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
